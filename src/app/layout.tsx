@@ -1,4 +1,4 @@
-import "@/styles/globals.css";
+import "@/styles/globals.css"
 
 
 export default function RootLayout({
@@ -8,5 +8,5 @@ export default function RootLayout({
     <html lang="en">
       <body>{children}</body>
     </html>
-  );
+  )
 }
