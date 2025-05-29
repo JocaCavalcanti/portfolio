@@ -1,11 +1,10 @@
 
 
 
-
-export default function Menu() {
+export default function ProjectComponent() {
     return (
         <div>
-            
+
         </div>
     )
 }
