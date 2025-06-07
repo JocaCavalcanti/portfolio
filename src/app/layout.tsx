@@ -7,7 +7,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body  className="bg-stone-900 min-h-dvh box-border name">
+      <body  className="bg-[#dfdff0] w-dvw overflow-x-hidden">
         <div className="max-w-7xl mx-auto w-full px-4">
           <HeaderComponent />
           {children}
