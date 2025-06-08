@@ -1,17 +1,25 @@
 import "@/styles/globals.css"
-import HeaderComponent from "@/components/header/headerComponent"
+import localFont from 'next/font/local'
+ 
+const zentryText = localFont({
+  src: '../assets/fonts/zentry-regular.woff2',
+  style: 'normal',
+  variable: '--font-zentry',
+})
 
+const mainText = localFont({
+  src: '../assets/fonts/general.woff2',
+  style: 'normal',
+  variable: '--font-generall',
+})
 
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en">
-      <body  className="bg-[#dfdff0] w-dvw overflow-x-hidden">
-        <div className="max-w-7xl mx-auto w-full px-4">
-          <HeaderComponent />
+    <html lang="en" className={`${mainText.variable} ${zentryText.variable}`}>
+      <body>
           {children}
-        </div>
       </body>
     </html>
   )
