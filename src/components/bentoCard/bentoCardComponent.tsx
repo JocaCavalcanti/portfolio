@@ -2,15 +2,15 @@
 import React from 'react'
 
 type Props = {
-  src: string
-  title: any
-  description: string
+  src?: string
+  title?: any
+  description?: string
 }
 
 export default function bentoCardComponent({ src, title, description }: Props){
-  
+
   return (
-    <div className='relativa size-full'>
+    <div className='relative size-full'>
       <video src={src} loop muted autoPlay className='absolute left-0 top-0 size-full object-cover object-center'></video>
       <div className='relative z-10 flex size-full flex-col justify-between p-5 text-blue-50'>
         <div>
@@ -19,9 +19,7 @@ export default function bentoCardComponent({ src, title, description }: Props){
             <p className='mt-3 max-w-64 text-xs md:text-base'>{description}</p>
           )}
         </div>
-
       </div>
-      
     </div>
   )
 }
