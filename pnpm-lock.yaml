@@ -8,6 +8,12 @@ importers:
 
   .:
     dependencies:
+      '@deemlol/next-icons':
+        specifier: ^0.1.9
+        version: 0.1.9(react@19.1.0)
+      '@gsap/react':
+        specifier: ^2.1.2
+        version: 2.1.2(gsap@3.13.0)(react@19.1.0)
       '@prisma/client':
         specifier: ^6.5.0
         version: 6.8.2(prisma@6.8.2(typescript@5.8.3))(typescript@5.8.3)
@@ -23,6 +29,9 @@ importers:
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
+      gsap:
+        specifier: ^3.13.0
+        version: 3.13.0
       lucide-react:
         specifier: ^0.511.0
         version: 0.511.0(react@19.1.0)
@@ -35,6 +44,9 @@ importers:
       react-dom:
         specifier: ^19.0.0
         version: 19.1.0(react@19.1.0)
+      react-parallax-tilt:
+        specifier: ^1.7.298
+        version: 1.7.298(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       tailwind-merge:
         specifier: ^3.3.0
         version: 3.3.0
@@ -101,6 +113,11 @@ packages:
     resolution: {integrity: sha512-30iZtAPgz+LTIYoeivqYo853f02jBYSd5uGnGpkFV0M3xOt9aN73erkgYAmZU43x4VfqcnLxW9Kpg3R5LC4YYw==}
     engines: {node: '>=6.0.0'}
 
+  '@deemlol/next-icons@0.1.9':
+    resolution: {integrity: sha512-TgKjPAyNTmmpmYSvRX6T0ZkqdV96vo7iEkiCEhQ8ZpBXrKvBokRn3wmuoFv44st6hI0vw2SVsF3TXrKe+s3MUQ==}
+    peerDependencies:
+      react: ^19.0.0
+
   '@emnapi/core@1.4.3':
     resolution: {integrity: sha512-4m62DuCE07lw01soJwPiBGC0nAww0Q+RY70VZ+n49yDIO13yyinhbWCeNnaob0lakDtWQzSdtNWzJeOJt2ma+g==}
 
@@ -147,6 +164,12 @@ packages:
   '@eslint/plugin-kit@0.3.1':
     resolution: {integrity: sha512-0J+zgWxHN+xXONWIyPWKFMgVuJoZuGiIFu8yxk7RJjxkzpGmyja5wRFqZIVtjDVOQpV+Rw0iOAjYPE2eQyjr0w==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+
+  '@gsap/react@2.1.2':
+    resolution: {integrity: sha512-JqliybO1837UcgH2hVOM4VO+38APk3ECNrsuSM4MuXp+rbf+/2IG2K1YJiqfTcXQHH7XlA0m3ykniFYstfq0Iw==}
+    peerDependencies:
+      gsap: ^3.12.5
+      react: '>=17'
 
   '@humanfs/core@0.19.1':
     resolution: {integrity: sha512-5DyQ4+1JEUzejeK1JGICcideyfUbGixgS9jNgex5nqkW+cY7WZhxBigmieN5Qnw9ZosSNVC9KQKyb+GUaGyKUA==}
@@ -1201,6 +1224,9 @@ packages:
   graphemer@1.4.0:
     resolution: {integrity: sha512-EtKwoO6kxCL9WO5xipiHTZlSzBm7WLT627TqC/uVRd0HKmq8NXyebnNYxDoBi7wt8eTWrUrKXCOVaFq9x1kgag==}
 
+  gsap@3.13.0:
+    resolution: {integrity: sha512-QL7MJ2WMjm1PHWsoFrAQH/J8wUeqZvMtHO58qdekHpCfhvhSL4gSiz6vJf5EeMP0LOn3ZCprL2ki/gjED8ghVw==}
+
   has-bigints@1.1.0:
     resolution: {integrity: sha512-R3pbpkcIqv2Pm3dUwgjclDRVmWpTJW2DcMzcIhEXEx1oh/CEMObMm3KLmRJOdvhM7o4uQBnwr8pzRK2sJWIqfg==}
     engines: {node: '>= 0.4'}
@@ -1745,6 +1771,12 @@ packages:
   react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
 
+  react-parallax-tilt@1.7.298:
+    resolution: {integrity: sha512-onHiUJJDJEOiqU4QP7jYQP1d1+ivFLBrCLRxTfVU/NqAhP0kOgWr9YY5ataYcK0eusltX9GGIpIDh+D9PfCfPA==}
+    peerDependencies:
+      react: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+      react-dom: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+
   react@19.1.0:
     resolution: {integrity: sha512-FS+XFBNvn3GTAWq26joslQgWNoFu08F4kl0J4CgdNKADkdSGXQyTCnKteIAJy96Br6YbpEU1LSzV5dYtjMkMDg==}
     engines: {node: '>=0.10.0'}
@@ -2043,6 +2075,10 @@ snapshots:
       '@jridgewell/gen-mapping': 0.3.8
       '@jridgewell/trace-mapping': 0.3.25
 
+  '@deemlol/next-icons@0.1.9(react@19.1.0)':
+    dependencies:
+      react: 19.1.0
+
   '@emnapi/core@1.4.3':
     dependencies:
       '@emnapi/wasi-threads': 1.0.2
@@ -2102,6 +2138,11 @@ snapshots:
     dependencies:
       '@eslint/core': 0.14.0
       levn: 0.4.1
+
+  '@gsap/react@2.1.2(gsap@3.13.0)(react@19.1.0)':
+    dependencies:
+      gsap: 3.13.0
+      react: 19.1.0
 
   '@humanfs/core@0.19.1': {}
 
@@ -3237,6 +3278,8 @@ snapshots:
 
   graphemer@1.4.0: {}
 
+  gsap@3.13.0: {}
+
   has-bigints@1.1.0: {}
 
   has-flag@4.0.0: {}
@@ -3696,6 +3739,11 @@ snapshots:
       scheduler: 0.26.0
 
   react-is@16.13.1: {}
+
+  react-parallax-tilt@1.7.298(react-dom@19.1.0(react@19.1.0))(react@19.1.0):
+    dependencies:
+      react: 19.1.0
+      react-dom: 19.1.0(react@19.1.0)
 
   react@19.1.0: {}
 
